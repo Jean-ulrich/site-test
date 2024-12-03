@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#work">Travail</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil">
+        <header>
+            <h1>Bienvenue sur mon Portfolio</h1>
+            <p>Je suis un développeur web passionné et créatif.</p>
+        </header>
+        <video width="600" controls>
+            <source src="introduction_video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Je suis un développeur web avec une expertise en front-end et back-end. J'aime créer des expériences utilisateurs fluides et interactives.</p>
+        <ul>
+            <li>Nom : John Doe</li>
+            <li>Âge : 30 ans</li>
+            <li>Compétences : HTML, CSS, JavaScript, React, Node.js</li>
+        </ul>
+    </section>
+
+    <!-- Section Travail -->
+    <section id="work">
+        <h2>Mes Projets</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom du Projet</th>
+                    <th>Description</th>
+                    <th>Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio Personnel</td>
+                    <td>Un site web pour présenter mes projets et compétences.</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Application de Gestion</td>
+                    <td>Une application pour gérer les tâches et les projets.</td>
+                    <td>React, Node.js, MongoDB</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv">
+        <h2>Mon CV</h2>
+        <p>Téléchargez mon CV au format PDF :</p>
+        <a href="cv_john_doe.pdf" download>Mon CV</a>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 John Doe - Développeur Web</p>
+    </footer>
+
+</body>
+</html>
